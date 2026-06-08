@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Naylin✨</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hearts"></div>
+
+    <!-- Pantalla 1 -->
+    <section class="screen active" id="screen1">
+        <div class="card">
+            <h1>🌻 Hola</h1>
+            <p class="question">¿Eres Naylin?</p>
+
+            <div class="buttons">
+                <button class="btn yes" onclick="goToQuestion()">
+                    Sí
+                </button>
+
+                <button class="btn no" onclick="notAilin()">
+                    No
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pantalla 2 -->
+    <section class="screen" id="screen2">
+        <div class="card">
+
+            <h1>🌸</h1>
+
+            <p class="question">
+                No se si alguien ya te dijo hoy pero
+                si no lo han hecho permiteme ser el primero que bonita te vez,
+                <br>
+                ¿Me pasas tu número?
+            </p>
+
+            <div class="buttons">
+
+                <button class="btn yes" onclick="acceptAnswer()">
+                    Sí
+                </button>
+
+                <button
+                    class="btn no"
+                    id="btnNo"
+                    onclick="showError()"
+                    onmouseover="moveButton()"
+                    ontouchstart="moveButton()">
+                    No
+                </button>
+
+            </div>
+
+            <p id="error"></p>
+
+        </div>
+    </section>
+
+    <!-- Pantalla 3 -->
+    <section class="screen" id="screen3">
+
+        <div class="card">
+
+            <h1>✨</h1>
+
+            <p class="success">
+                Has elegido la respuesta correcta.
+                <br><br>
+                Sabía que sí querías. 😁
+            </p>
+
+            <div class="buttons-column">
+
+               <a
+    class="btn whatsapp"
+    href="https://api.whatsapp.com/send?phone=522381716404&text=Hola,%20soy%20la%20felicidad%20a%20tu%20vida">
+    💬 Enviar mensaje
+</a>
+
+                <a
+                    class="btn call"
+                    href="tel:+522381716404">
+                    📞 Llamar
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
